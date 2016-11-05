@@ -14,7 +14,7 @@ public class questions1 extends AppCompatActivity {
     }
     public void questions2(View view)
     {
-        Intent intent = new Intent(questions1.this,questions2.class);
-        startActivity(intent);
+        Intent q2 = new Intent(questions1.this,questions2.class);
+        startActivity(q2);
     }
 }
