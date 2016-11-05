@@ -25,7 +25,9 @@
         <activity android:name=".questions1" />
         <activity android:name=".questions2" />
         <activity android:name=".questions3" />
-        <activity android:name=".activity_questions4">
+        <activity android:name=".activity_questions4" />
+        <activity android:name=".questions5" />
+        <activity android:name=".questions6">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

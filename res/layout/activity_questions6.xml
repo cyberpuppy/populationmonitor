@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_page3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.d.populationmonitor.questions6">
+
+    <TextView
+        android:text="dominant constraction material of main dwelling unit roof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView14" />
+    android:id="@+id/H-21"
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:entries="@array/spinner6"
+        android:background="#85929E"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/spinner6" />
+
+    <TextView
+        android:text="dominant constraction material of main dwelling unit wall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp"
+        android:id="@+id/textView15" />
+    android:id="@+id/H-22"
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:entries="@array/spinner7"
+        android:background="#85929E"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/spinner7" />
+
+    <TextView
+        android:text="dominant constraction material of main dwelling unit floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView16" />
+    android:id="@+id/H-23"
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/spinner8"
+        android:layout_below="@+id/textView16"
+        android:entries="@array/spinner8"
+        android:background="#85929E"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="main source of water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/spinner8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    android:id="@+id/H-24"
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView17"
+        android:entries="@array/spinner9"
+        android:background="#85929E"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:id="@+id/spinner9" />
+
+    <TextView
+        android:text="main mode of human waste disposal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView18" />
+    android:id="@+id/H-25"
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView18"
+        android:entries="@array/spinner10"
+        android:background="#85929E"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/spinner10" />
+
+    <TextView
+        android:text="main type of lighting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner10"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView19" />
+    android:id="@+id/H-27"
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView19"
+        android:entries="@array/spinner11"
+        android:background="#85929E"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/spinner11" />
+
+    <Button
+        android:text="Next page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button3" />
+
+</RelativeLayout>
