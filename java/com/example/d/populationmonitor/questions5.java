@@ -1,5 +1,6 @@
 package com.example.d.populationmonitor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -37,6 +38,7 @@ public class questions5 extends AppCompatActivity {
                         break;
 
                 }
+                String owned=spinneruse.getSelectedItem().toString();
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent){
@@ -85,6 +87,7 @@ public class questions5 extends AppCompatActivity {
                         break;
 
                 }
+                String rent=spinneruse.getSelectedItem().toString();
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent){
@@ -93,6 +96,11 @@ public class questions5 extends AppCompatActivity {
 
         });
 
+    }
+    public void questions6(View view)
+    {
+        Intent q4 = new Intent(questions5.this,questions6.class);
+        startActivity(q4);
     }
 }
 

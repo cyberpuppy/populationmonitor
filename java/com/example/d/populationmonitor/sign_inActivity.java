@@ -42,7 +42,7 @@ public class sign_inActivity extends AppCompatActivity implements AsyncResponse,
         postData.put("password", PasswordEt.getText().toString());
 
                 PostResponseAsyncTask task = new PostResponseAsyncTask(this, postData);
-                task.execute("http://192.168.0.14/myfiles/connection2.1.php");
+                task.execute("http://10.0.3.2/myfiles/connection2.1.php");
     }
 
     @Override

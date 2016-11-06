@@ -89,44 +89,44 @@
             android:ems="10"
             android:id="@+id/editText5" />
 
-        <TextView
-            android:text="@string/e_a_number"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView10" />
+        <!--<TextView-->
+            <!--android:text="@string/e_a_number"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/textView10" />-->
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText6" />
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="12dp"-->
+            <!--android:ems="10"-->
+            <!--android:id="@+id/editText6" />-->
 
-        <TextView
-            android:text="@string/e_a_type"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView11" />
+        <!--<TextView-->
+            <!--android:text="@string/e_a_type"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/textView11" />-->
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText7" />
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="12dp"-->
+            <!--android:ems="10"-->
+            <!--android:id="@+id/editText7" />-->
 
-        <TextView
-            android:text="@string/e_a_status"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView12" />
+        <!--<TextView-->
+            <!--android:text="@string/e_a_status"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/textView12" />-->
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText8" />
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="12dp"-->
+            <!--android:ems="10"-->
+            <!--android:id="@+id/editText8" />-->
 
         <TextView
             android:text="@string/household_no"

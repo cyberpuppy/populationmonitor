@@ -110,7 +110,8 @@
         android:layout_below="@+id/editText2"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/button2" />
+        android:id="@+id/button4"
+        android:onClick="questions5"/>
 
     <EditText
         android:layout_width="wrap_content"

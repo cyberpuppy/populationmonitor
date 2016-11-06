@@ -27,14 +27,8 @@
         <activity android:name=".questions3" />
         <activity android:name=".activity_questions4" />
         <activity android:name=".questions5" />
-        <activity android:name=".questions6">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".questions7"></activity>
+        <activity android:name=".questions6"/>
+        <activity android:name=".questions7"/>
     </application>
 
 </manifest>

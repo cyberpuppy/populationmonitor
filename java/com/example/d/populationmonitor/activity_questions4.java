@@ -1,5 +1,6 @@
 package com.example.d.populationmonitor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -143,6 +144,11 @@ public class activity_questions4 extends AppCompatActivity {
 
         });
 
+    }
+    public void questions5(View view)
+    {
+        Intent q5 = new Intent(activity_questions4.this,questions5.class);
+        startActivity(q5);
     }
 }
 

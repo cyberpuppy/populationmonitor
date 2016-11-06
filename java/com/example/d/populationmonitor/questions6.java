@@ -53,6 +53,7 @@ public class questions6 extends AppCompatActivity {
                         break;
 
                 }
+                String roof=spinneruse.getSelectedItem().toString();
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent){
@@ -107,6 +108,7 @@ public class questions6 extends AppCompatActivity {
                         break;
 
                 }
+                String wall=spinneruse.getSelectedItem().toString();
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent){
@@ -149,6 +151,7 @@ public class questions6 extends AppCompatActivity {
                         break;
 
                 }
+                String floor=spinneruse.getSelectedItem().toString();
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent){
@@ -221,6 +224,7 @@ public class questions6 extends AppCompatActivity {
                         break;
 
                 }
+                String water=spinneruse.getSelectedItem().toString();
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent){
@@ -275,6 +279,7 @@ public class questions6 extends AppCompatActivity {
                         break;
 
                 }
+                String waste_disposal=spinneruse.getSelectedItem().toString();
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent){
@@ -325,6 +330,7 @@ public class questions6 extends AppCompatActivity {
                         break;
 
                 }
+                String lighting=spinneruse.getSelectedItem().toString();
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent){
@@ -334,6 +340,7 @@ public class questions6 extends AppCompatActivity {
         });
 
     }
+
 }
 
 
