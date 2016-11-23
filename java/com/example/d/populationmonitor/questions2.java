@@ -27,8 +27,8 @@ public class questions2 extends AppCompatActivity implements AsyncResponse,View.
         p_10 = (Spinner) findViewById(R.id.p_10);
         p_11 = (Spinner) findViewById(R.id.p_11);
         p_12 = (EditText) findViewById(R.id.edittext_p12);
-        p_14 = (EditText) findViewById(R.id.editText14);
-        p_15 = (EditText) findViewById(R.id.editText15);
+        p_14 = (EditText) findViewById(R.id.edittext_p14);
+        p_15 = (EditText) findViewById(R.id.edittext_p15);
         p_16 = (EditText) findViewById(R.id.edittext_p16);
         p_17 = (EditText) findViewById(R.id.edittext_p17);
         p_18 = (EditText) findViewById(R.id.edittext_p18);
@@ -61,6 +61,7 @@ public class questions2 extends AppCompatActivity implements AsyncResponse,View.
         PostData.put("p_22",p_22.getSelectedItem().toString());
         PostData.put("p_23",p_23.getSelectedItem().toString());
         PostResponseAsyncTask task= new PostResponseAsyncTask(this,PostData);
+        task.execute("http://10.0.3.2/myfiles/questionare2.php");
 
     }
 

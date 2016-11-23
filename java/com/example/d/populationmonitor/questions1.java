@@ -22,7 +22,7 @@ public class questions1 extends AppCompatActivity implements AsyncResponse, Adap
     private ArrayAdapter<String> adapter;
 
     EditText Males,females,household_no, Total;
-    Button button2;
+    Button button;
 
 
     //These values show in autocomplete
@@ -46,8 +46,8 @@ public class questions1 extends AppCompatActivity implements AsyncResponse, Adap
         household_no = (EditText) findViewById(R.id.editText9);
         Total =(EditText) findViewById(R.id.editText15);
         county =(AutoCompleteTextView) findViewById(R.id.county);
-        button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(this);
+        button = (Button) findViewById(R.id.button1);
+        button.setOnClickListener(this);
 
         //Create adapter
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, counties );
@@ -89,7 +89,7 @@ public class questions1 extends AppCompatActivity implements AsyncResponse, Adap
         PostData.put("Total",Total.getText().toString());
         PostData.put("County",county.getText().toString());
         PostResponseAsyncTask task = new PostResponseAsyncTask(this,PostData);
-        task.execute("http://10.0.3.2/myfiles/data.php");
+        task.execute("http://10.0.3.2/myfiles/questionare1.php");
     }
 
     @Override

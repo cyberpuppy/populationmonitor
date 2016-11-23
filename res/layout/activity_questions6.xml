@@ -140,10 +140,10 @@
         android:text="Next page"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="questions7"
+        android:id="@+id/button6"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="questions7"
-        android:id="@+id/button3" />
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
