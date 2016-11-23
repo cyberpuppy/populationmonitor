@@ -29,13 +29,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="12dp"
-        android:id="@+id/editText" />
+        android:id="@+id/editText_H11" />
 
     <TextView
         android:text="housing conditions and amenities"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/editText_H11"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="11dp"
@@ -61,13 +61,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="11dp"
-        android:id="@+id/editText3" />
+        android:id="@+id/editText_H12" />
 
     <TextView
         android:text="how many habitable rooms do these units contain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/editText_H12"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="8dp"

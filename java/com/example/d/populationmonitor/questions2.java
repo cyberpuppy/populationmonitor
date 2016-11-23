@@ -4,34 +4,70 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
-public class questions2 extends AppCompatActivity {
+import com.kosalgeek.asynctask.AsyncResponse;
+import com.kosalgeek.asynctask.PostResponseAsyncTask;
 
+import java.util.HashMap;
+
+public class questions2 extends AppCompatActivity implements AsyncResponse,View.OnClickListener {
+    EditText name,p_00,p_12,p_14,p_15,p_16,p_17,p_18,p_19,p_20;
+    Spinner p_10,p_11,p_22,p_23;
+    Button button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions2);
+
+        name = (EditText) findViewById(R.id.edittext_name);
+        p_00 = (EditText) findViewById(R.id.edittext_p00);
+        p_10 = (Spinner) findViewById(R.id.p_10);
+        p_11 = (Spinner) findViewById(R.id.p_11);
+        p_12 = (EditText) findViewById(R.id.edittext_p12);
+        p_14 = (EditText) findViewById(R.id.editText14);
+        p_15 = (EditText) findViewById(R.id.editText15);
+        p_16 = (EditText) findViewById(R.id.edittext_p16);
+        p_17 = (EditText) findViewById(R.id.edittext_p17);
+        p_18 = (EditText) findViewById(R.id.edittext_p18);
+        p_19 = (EditText) findViewById(R.id.edittext_p19);
+        p_20 = (EditText) findViewById(R.id.edittext_p20);
+        p_22 = (Spinner) findViewById(R.id.edittext_p22);
+        p_23= (Spinner) findViewById(R.id.edittext_p23);
+        button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(this);
+
+
     }
 
 
-    public void questions3(View view) {
-        final EditText gender = (EditText) findViewById(R.id.edittext_p11);
+    @Override
+    public void onClick(View view) {
+        HashMap PostData = new HashMap();
+        PostData.put("p_name",name.getText().toString());
+        PostData.put("p_00",p_00.getText().toString());
+        PostData.put("p_10",p_10.getSelectedItem().toString());
+        PostData.put("p_11",p_11.getSelectedItem().toString());
+        PostData.put("p_12",p_12.getText().toString());
+        PostData.put("p_14",p_14.getText().toString());
+        PostData.put("p_15",p_15.getText().toString());
+        PostData.put("p_16",p_16.getText().toString());
+        PostData.put("p_17",p_17.getText().toString());
+        PostData.put("p_18",p_18.getText().toString());
+        PostData.put("p_19",p_19.getText().toString());
+        PostData.put("p_20",p_20.getText().toString());
+        PostData.put("p_22",p_22.getSelectedItem().toString());
+        PostData.put("p_23",p_23.getSelectedItem().toString());
+        PostResponseAsyncTask task= new PostResponseAsyncTask(this,PostData);
 
+    }
 
-        if (gender.getText().toString().equals("female"))
-
-        {
-            Intent intent = new Intent(questions2.this, questions3.class);
-            startActivity(intent);
-        }
-
-        else
-
-        {
-            Intent intent2 = new Intent(questions2.this, activity_questions4.class);
-            startActivity(intent2);
-        }
+    @Override
+    public void processFinish(String s) {
+        Intent q3 = new Intent(questions2.this, questions3.class);
+        startActivity(q3);
     }
 }
 

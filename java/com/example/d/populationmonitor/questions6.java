@@ -340,6 +340,12 @@ public class questions6 extends AppCompatActivity {
         });
 
     }
+//    public void questions7(View view) {
+//
+//        Intent intent = new Intent(questions6.this, questions7.class);
+//        startActivity(intent);
+//    }
+
 
 }
 

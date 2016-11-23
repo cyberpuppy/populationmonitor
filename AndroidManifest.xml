@@ -28,7 +28,6 @@
         <activity android:name=".activity_questions4" />
         <activity android:name=".questions5" />
         <activity android:name=".questions6"/>
-        <activity android:name=".questions7"/>
     </application>
 
 </manifest>

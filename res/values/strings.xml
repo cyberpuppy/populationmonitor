@@ -16,7 +16,7 @@
     </string>
     <string name="title_activity_questions">Questions</string>
     <string name="title_activity_welcome">welcome</string>
-    <string name="province">Province</string>
+    <string name="County">County</string>
     <string name="total_household_population">Total Household population</string>
     <string name="females">Females</string>
     <string name="males">Males</string>
@@ -144,5 +144,29 @@
         <item>Fuel wood</item>
         <item>Solar</item>
         <item>Other</item>
+    </string-array>
+    <string-array name="head_of_house">
+        <item>I am the head</item>
+        <item>Spouse</item>
+        <item>Son/Daughter</item>
+        <item>Grandchild</item>
+        <item>Brother/Sister</item>
+        <item>Father/Mother</item>
+        <item>Nephew/Niece</item>
+        <item> In-Law</item>
+        <item>Grandparents</item>
+        <item>Other relations</item>
+        <item>Non-relative</item>
+        <item>DK</item>
+    </string-array>
+
+    <string-array name="yesno">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
     </string-array>
 </resources>

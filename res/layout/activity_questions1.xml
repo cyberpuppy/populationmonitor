@@ -25,108 +25,19 @@
 
 
         <TextView
-            android:text="@string/province"
+            android:text="@string/County"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView5" />
 
-        <EditText
+        <AutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="12dp"
             android:ems="10"
-            android:id="@+id/editText" />
+            android:id="@+id/county" />
 
-        <TextView
-            android:text="@string/district"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView6" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText2" />
-
-        <TextView
-            android:text="@string/division"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView7" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText3" />
-
-        <TextView
-            android:text="@string/location"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView8" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText4" />
-
-        <TextView
-            android:text="@string/sub_location"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView9" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText5" />
-
-        <!--<TextView-->
-            <!--android:text="@string/e_a_number"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:id="@+id/textView10" />-->
-
-        <!--<EditText-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textSize="12dp"-->
-            <!--android:ems="10"-->
-            <!--android:id="@+id/editText6" />-->
-
-        <!--<TextView-->
-            <!--android:text="@string/e_a_type"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:id="@+id/textView11" />-->
-
-        <!--<EditText-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textSize="12dp"-->
-            <!--android:ems="10"-->
-            <!--android:id="@+id/editText7" />-->
-
-        <!--<TextView-->
-            <!--android:text="@string/e_a_status"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:id="@+id/textView12" />-->
-
-        <!--<EditText-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textSize="12dp"-->
-            <!--android:ems="10"-->
-            <!--android:id="@+id/editText8" />-->
 
         <TextView
             android:text="@string/household_no"
@@ -140,43 +51,19 @@
             android:ems="10"
             android:id="@+id/editText9" />
 
-        <TextView
-            android:text="@string/household_type"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView14" />
+        <!--<TextView-->
+            <!--android:text="@string/household_type"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/textView14" />-->
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText10" />
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="12dp"-->
+            <!--android:ems="10"-->
+            <!--android:id="@+id/editText10" />-->
 
-        <TextView
-            android:text="@string/constituency"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView15" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText11" />
-
-        <TextView
-            android:text="@string/ward"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView16" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText12" />
 
         <TextView
             android:text="@string/males"
@@ -228,7 +115,6 @@
                 android:text="@string/next"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="questions2"
                 android:id="@+id/button2"/>
         </LinearLayout>
 

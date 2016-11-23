@@ -26,7 +26,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="date"/>
+            android:id="@+id/editText_p24"/>
         <TextView
             android:text="How many children have you born alive and live in this household?"
             android:layout_width="match_parent"
@@ -35,7 +35,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="date"/>
+            android:id="@+id/editText_26"/>
         <TextView
             android:text="How many children have you born that live elsewhere?"
             android:layout_width="match_parent"
@@ -54,7 +54,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="date"/>
+            android:id="@+id/editText_30"/>
         <TextView
             android:text="When was your last child born?"
             android:layout_width="match_parent"
