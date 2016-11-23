@@ -4,153 +4,58 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
 
-public class activity_questions4 extends AppCompatActivity {
-    Spinner spinneruse;
+import com.kosalgeek.asynctask.AsyncResponse;
+import com.kosalgeek.asynctask.PostResponseAsyncTask;
+
+import java.util.HashMap;
+
+public class activity_questions4 extends AppCompatActivity implements AsyncResponse,View.OnClickListener {
+    Spinner p_37,p_38,p_39;
+    EditText h_10;
+    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions4);
 
-        spinneruse = (Spinner) findViewById(R.id.spinner);
-
-        spinneruse.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
-            {
-                switch (position){
-                    case 0:
-                        Toast.makeText(getApplicationContext(), "Visual", Toast.LENGTH_LONG).show();
-                        break;
-                    case 1:
-                        Toast.makeText(getApplicationContext(), "Hearing", Toast.LENGTH_LONG).show();
-                        break;
-                    case 2:
-                        Toast.makeText(getApplicationContext(), "Speech", Toast.LENGTH_LONG).show();
-                        break;
-                    case 3:
-                        Toast.makeText(getApplicationContext(), "Physical", Toast.LENGTH_LONG).show();
-                        break;
-                    case 4:
-                        Toast.makeText(getApplicationContext(), "Mental", Toast.LENGTH_LONG).show();
-                        break;
-                    case 5:
-                        Toast.makeText(getApplicationContext(), "Self care", Toast.LENGTH_LONG).show();
-                        break;
-                    case 6:
-                        Toast.makeText(getApplicationContext(), "Others", Toast.LENGTH_LONG).show();
-                        break;
-                    case 7:
-                        Toast.makeText(getApplicationContext(), "None", Toast.LENGTH_LONG).show();
-                        break;
-                    default:
-                        break;
-
-                }
-            }
+        p_37 = (Spinner) findViewById(R.id.spinner);
+        p_38 = (Spinner) findViewById(R.id.spinner2);
+        p_39 = (Spinner) findViewById(R.id.spinner3);
+        h_10 = (EditText) findViewById(R.id.editText2);
+        button = (Button) findViewById(R.id.button4);
+        button.setOnClickListener(this);
 
 
-            @Override
-            public void onNothingSelected(AdapterView<?> parent){
 
-            }
 
-        });
+        }
 
+    @Override
+    public void onClick(View view) {
+        HashMap PostData = new HashMap();
+        PostData.put("p_37",p_37.getSelectedItem().toString());
+        PostData.put("p_38",p_38.getSelectedItem().toString());
+        PostData.put("p_39",p_39.getSelectedItem().toString());
+        PostData.put("h_10",h_10.getText().toString());
+        PostResponseAsyncTask task = new PostResponseAsyncTask(this,PostData);
+        task.execute("http://10.0.3.2/myfiles/questionare4.php");
     }
 
-
-
-    protected void onCreate2(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_questions4);
-
-        spinneruse = (Spinner) findViewById(R.id.spinner2);
-
-        spinneruse.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
-        {
-
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
-            {
-                switch (position){
-                    case 0:
-                        Toast.makeText(getApplicationContext(), "Yes", Toast.LENGTH_LONG).show();
-                        break;
-                    case 1:
-                        Toast.makeText(getApplicationContext(), "No", Toast.LENGTH_LONG).show();
-                        break;
-                    case 2:
-                        Toast.makeText(getApplicationContext(), "NA", Toast.LENGTH_LONG).show();
-                        break;
-                    case 3:
-                        Toast.makeText(getApplicationContext(), "DK", Toast.LENGTH_LONG).show();
-                        break;
-                    default:
-                        break;
-
-                }
-            }
-
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent){
-
-            }
-
-        });
-
-    }
-
-
-    protected void onCreate3(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_questions4);
-
-        spinneruse = (Spinner) findViewById(R.id.spinner3);
-
-        spinneruse.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
-        {
-
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
-            {
-                switch (position){
-                    case 0:
-                        Toast.makeText(getApplicationContext(), "At school", Toast.LENGTH_LONG).show();
-                        break;
-                    case 1:
-                        Toast.makeText(getApplicationContext(), "Left school", Toast.LENGTH_LONG).show();
-                        break;
-                    case 2:
-                        Toast.makeText(getApplicationContext(), "Never went to school", Toast.LENGTH_LONG).show();
-                        break;
-                    case 3:
-                        Toast.makeText(getApplicationContext(), "DK", Toast.LENGTH_LONG).show();
-                        break;
-                    default:
-                        break;
-
-                }
-            }
-
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent){
-
-            }
-
-        });
-
-    }
-    public void questions5(View view)
-    {
-        Intent q5 = new Intent(activity_questions4.this,questions5.class);
-        startActivity(q5);
+    @Override
+    public void processFinish(String s) {
+        Intent q3 = new Intent(activity_questions4.this, questions5.class);
+        startActivity(q3);
     }
 }
+
+
+
+
+
 
 
 

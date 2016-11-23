@@ -59,7 +59,7 @@
         android:id="@+id/spinner2" />
 
     <TextView
-        android:text="information rendering pesons aged 3 years and above"
+        android:text="information rendering persons aged 3 years and above"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/spinner2"
