@@ -35,7 +35,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editText_26"/>
+            android:id="@+id/editText_p26"/>
         <TextView
             android:text="How many children have you born that live elsewhere?"
             android:layout_width="match_parent"
@@ -50,11 +50,11 @@
             android:text="How many children have you born alive who have died?"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textview_p29"/>
+            android:id="@+id/textview_p30"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editText_30"/>
+            android:id="@+id/editText_p30"/>
         <TextView
             android:text="When was your last child born?"
             android:layout_width="match_parent"
