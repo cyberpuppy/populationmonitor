@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.kosalgeek.asynctask.AsyncResponse;
 import com.kosalgeek.asynctask.PostResponseAsyncTask;
@@ -66,9 +67,14 @@ public class questions2 extends AppCompatActivity implements AsyncResponse,View.
     }
 
     @Override
-    public void processFinish(String s) {
-        Intent q3 = new Intent(questions2.this, questions3.class);
-        startActivity(q3);
+    public void processFinish(String result) {
+        if(result.equals("sending success !")){
+            Intent in= new Intent(this, questions3.class);
+            startActivity(in);
+        }
+        else{
+            Toast.makeText(this,"submission failed try again",Toast.LENGTH_LONG).show();
+        }
     }
 }
 

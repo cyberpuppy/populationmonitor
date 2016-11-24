@@ -93,9 +93,14 @@ public class questions1 extends AppCompatActivity implements AsyncResponse, Adap
     }
 
     @Override
-    public void processFinish(String s) {
-        Intent q2 = new Intent(questions1.this, questions2.class);
-        startActivity(q2);
+    public void processFinish(String result) {
+        if(result.equals("sending success !")){
+            Intent in= new Intent(this, questions2.class);
+            startActivity(in);
+        }
+        else{
+            Toast.makeText(this,"submission failed try again",Toast.LENGTH_LONG).show();
+        }
     }
 
 

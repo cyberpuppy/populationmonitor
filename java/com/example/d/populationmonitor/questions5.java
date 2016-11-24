@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.kosalgeek.asynctask.AsyncResponse;
 import com.kosalgeek.asynctask.PostResponseAsyncTask;
@@ -37,19 +38,24 @@ public class questions5 extends AppCompatActivity implements AsyncResponse,View.
 
     @Override
     public void onClick(View view) {
-        HashMap PostDate = new HashMap();
-        PostDate.put("h_11",h_11.getText().toString());
-        PostDate.put("h_18",h_18.getText().toString());
-        PostDate.put("h_19",h_19.getText().toString());
+        HashMap PostData = new HashMap();
+        PostData.put("h_11",h_11.getText().toString());
+        PostData.put("h_18",h_18.getText().toString());
+        PostData.put("h_19",h_19.getText().toString());
 
-        PostResponseAsyncTask task = new PostResponseAsyncTask(this,PostDate);
+        PostResponseAsyncTask task = new PostResponseAsyncTask(this,PostData);
         task.execute("http://10.0.3.2/myfiles/questionare5.php");
     }
 
     @Override
-    public void processFinish(String s) {
-        Intent q3 = new Intent(questions5.this, questions6.class);
-        startActivity(q3);
+    public void processFinish(String result) {
+        if(result.equals("sending success !")){
+            Intent in= new Intent(this, questions6.class);
+            startActivity(in);
+        }
+        else{
+            Toast.makeText(this,"submission failed try again",Toast.LENGTH_LONG).show();
+        }
     }
 }
 

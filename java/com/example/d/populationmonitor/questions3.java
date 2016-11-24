@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.kosalgeek.asynctask.AsyncResponse;
 import com.kosalgeek.asynctask.PostResponseAsyncTask;
@@ -43,8 +44,13 @@ public class questions3 extends AppCompatActivity implements AsyncResponse,View.
     }
 
     @Override
-    public void processFinish(String s) {
-        Intent q4 = new Intent(questions3.this, activity_questions4.class);
-        startActivity(q4);
+    public void processFinish(String result) {
+        if(result.equals("sending success !")){
+            Intent in= new Intent(this, activity_questions4.class);
+            startActivity(in);
+        }
+        else{
+            Toast.makeText(this,"submission failed try again",Toast.LENGTH_LONG).show();
+        }
     }
 }

@@ -1,5 +1,6 @@
 package com.example.d.populationmonitor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -43,14 +44,18 @@ public class questions6 extends AppCompatActivity implements AsyncResponse,View.
         PostData.put("h_27",spinner11.getSelectedItem().toString());
 
         PostResponseAsyncTask task = new PostResponseAsyncTask(this,PostData);
-        task.execute("");
+        task.execute("http://10.0.3.2/myfiles/questionare6.php");
     }
 
     @Override
-    public void processFinish(String s) {
+    public void processFinish(String result) {
 
-    }
+            Intent in= new Intent(this, questions1.class);
+            startActivity(in);
+        }
+
 }
+
 
 
 

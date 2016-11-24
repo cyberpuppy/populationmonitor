@@ -66,7 +66,7 @@
 
 
         <TextView
-            android:text="@string/males"
+            android:text="How many males are in this house"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView17" />
@@ -79,7 +79,7 @@
             android:id="@+id/editText13" />
 
         <TextView
-            android:text="@string/females"
+            android:text="How many females are in this house"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView18" />

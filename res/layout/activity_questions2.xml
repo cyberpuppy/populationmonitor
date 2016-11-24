@@ -40,19 +40,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textview_p00"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:id="@+id/edittext_p00"
-            android:inputType="none" />
-
-        <TextView
-            android:text="What is your relationship with the head of the household?"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textview_p10"/>
-
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,6 +47,20 @@
             android:ems="10"
             android:entries="@array/head_of_house"
             android:id="@+id/p_10"/>
+
+
+        <TextView
+            android:text="What is your relationship with the head of the household?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_p10"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/edittext_p00"
+            android:inputType="none" />
 
         <TextView
             android:text="What is your gender?"
@@ -151,6 +152,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="date"
+            android:hint="Date"
             android:id="@+id/edittext_p20"/>
         <TextView
             android:text="Is your father alive?"
