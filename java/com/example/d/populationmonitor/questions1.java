@@ -81,17 +81,22 @@ public class questions1 extends AppCompatActivity implements AsyncResponse, Adap
 
     @Override
     public void onClick(View view) {
-        HashMap PostData=new HashMap();
-        PostData.put("mobile","android");
-        PostData.put("Males",Males.getText().toString());
-        PostData.put("Females",females.getText().toString());
-        PostData.put("Household_NO",household_no.getText().toString());
-        PostData.put("Total",Total.getText().toString());
-        PostData.put("County",county.getText().toString());
-        PostResponseAsyncTask task = new PostResponseAsyncTask(this,PostData);
-        task.execute("http://10.0.3.2/myfiles/questionare1.php");
-    }
+        if ((county.length() == 0) || (Males.length() == 0) || (females.length() == 0) || Total.length() == 0 || household_no.length() == 0) {
 
+            Toast.makeText(this,"Please fill all fields",Toast.LENGTH_LONG).show();
+        }
+        else {
+            HashMap PostData = new HashMap();
+            PostData.put("mobile", "android");
+            PostData.put("Males", Males.getText().toString());
+            PostData.put("Females", females.getText().toString());
+            PostData.put("Household_NO", household_no.getText().toString());
+            PostData.put("Total", Total.getText().toString());
+            PostData.put("County", county.getText().toString());
+            PostResponseAsyncTask task = new PostResponseAsyncTask(this, PostData);
+            task.execute("http://10.0.3.2/myfiles/questionare1.php");
+        }
+    }
     @Override
     public void processFinish(String result) {
         if(result.equals("sending success !")){

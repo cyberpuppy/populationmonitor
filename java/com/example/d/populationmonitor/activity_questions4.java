@@ -37,13 +37,18 @@ public class activity_questions4 extends AppCompatActivity implements AsyncRespo
 
     @Override
     public void onClick(View view) {
-        HashMap PostData = new HashMap();
-        PostData.put("p_37",p_37.getSelectedItem().toString());
-        PostData.put("p_38",p_38.getSelectedItem().toString());
-        PostData.put("p_39",p_39.getSelectedItem().toString());
-        PostData.put("h_10",h_10.getText().toString());
-        PostResponseAsyncTask task = new PostResponseAsyncTask(this,PostData);
-        task.execute("http://10.0.3.2/myfiles/questionare4.php");
+        if (h_10.length()==0) {
+            Toast.makeText(this,"Fill all fields",Toast.LENGTH_LONG).show();
+        }
+        else {
+            HashMap PostData = new HashMap();
+            PostData.put("p_37", p_37.getSelectedItem().toString());
+            PostData.put("p_38", p_38.getSelectedItem().toString());
+            PostData.put("p_39", p_39.getSelectedItem().toString());
+            PostData.put("h_10", h_10.getText().toString());
+            PostResponseAsyncTask task = new PostResponseAsyncTask(this, PostData);
+            task.execute("http://10.0.3.2/myfiles/questionare4.php");
+        }
     }
 
     @Override

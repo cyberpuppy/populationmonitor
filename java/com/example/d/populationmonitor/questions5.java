@@ -38,13 +38,17 @@ public class questions5 extends AppCompatActivity implements AsyncResponse,View.
 
     @Override
     public void onClick(View view) {
-        HashMap PostData = new HashMap();
-        PostData.put("h_11",h_11.getText().toString());
-        PostData.put("h_18",h_18.getText().toString());
-        PostData.put("h_19",h_19.getText().toString());
+        if ((h_11.length()==0)||(h_18.length()==0)||(h_19.length()==0)) {
+            Toast.makeText(this,"Please fill all fields",Toast.LENGTH_LONG).show();
+        } else {
+            HashMap PostData = new HashMap();
+            PostData.put("h_11", h_11.getText().toString());
+            PostData.put("h_18", h_18.getText().toString());
+            PostData.put("h_19", h_19.getText().toString());
 
-        PostResponseAsyncTask task = new PostResponseAsyncTask(this,PostData);
-        task.execute("http://10.0.3.2/myfiles/questionare5.php");
+            PostResponseAsyncTask task = new PostResponseAsyncTask(this, PostData);
+            task.execute("http://10.0.3.2/myfiles/questionare5.php");
+        }
     }
 
     @Override

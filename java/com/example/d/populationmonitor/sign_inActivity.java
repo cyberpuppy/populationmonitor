@@ -36,16 +36,19 @@ public class sign_inActivity extends AppCompatActivity implements AsyncResponse,
 
     @Override
     public void onClick(View v) {
+        if ((IdEt.length()==0)||(PasswordEt.length()==0)) {
+            Toast.makeText(this,"Please insert Id and Password",Toast.LENGTH_LONG).show();
+        }
+        else{
+            HashMap postData = new HashMap();
+            postData.put("mobile", "android");
+            postData.put("id", IdEt.getText().toString());
+            postData.put("password", PasswordEt.getText().toString());
 
-        HashMap postData = new HashMap();
-        postData.put("mobile","android");
-        postData.put("id", IdEt.getText().toString());
-        postData.put("password", PasswordEt.getText().toString());
-
-                PostResponseAsyncTask task = new PostResponseAsyncTask(this, postData);
-                task.execute("http://10.0.3.2/myfiles/connection2.1.php");
+            PostResponseAsyncTask task = new PostResponseAsyncTask(this, postData);
+            task.execute("http://10.0.3.2/myfiles/connection2.1.php");
+        }
     }
-
     @Override
     public void processFinish(String result) {
             if(result.equals("login success !")){
