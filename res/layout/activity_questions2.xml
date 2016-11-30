@@ -40,34 +40,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textview_p00"/>
-        <EditText
+        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/edittext_p00"/>
+            android:entries="@array/head_of_house"
+            android:id="@+id/p_10"/>
+
+
         <TextView
             android:text="What is your relationship with the head of the household?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textview_p10"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:id="@+id/edittext_p10"
+            android:id="@+id/edittext_p00"
             android:inputType="none" />
+
         <TextView
             android:text="What is your gender?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textview_p11"/>
-        <EditText
+        <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
+<<<<<<< HEAD
             android:id="@+id/edittext_p11"/>
+=======
+            android:entries="@array/gender"
+            android:id="@+id/p_11"/>
+>>>>>>> 7d61d352c6ab647ff759ff93b315ed05000b09ed
          <TextView
              android:text="What is your age?"
              android:layout_width="wrap_content"
@@ -93,11 +103,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textview_p15"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="none"
             android:id="@+id/edittext_p15"/>
+
         <TextView
             android:text="What is your religion?"
             android:layout_width="match_parent"
@@ -106,7 +118,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edittext_16"/>
+            android:id="@+id/edittext_p16"/>
         <TextView
             android:text="What is your marital status?"
             android:layout_width="match_parent"
@@ -118,7 +130,7 @@
             android:id="@+id/edittext_p17"
             android:inputType="none"/>
         <TextView
-            android:text="Where wer you born?"
+            android:text="Where were you born?"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textview_p18"/>
@@ -144,25 +156,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="date"
+            android:hint="Date"
             android:id="@+id/edittext_p20"/>
         <TextView
             android:text="Is your father alive?"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textview_p22"/>
-        <EditText
+        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Edittext_p22"/>
+            android:entries="@array/yesno"
+            android:id="@+id/edittext_p22"/>
         <TextView
             android:text="Is your mother alive?"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textview_p23"/>
-        <EditText
+        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:entries="@array/yesno"
             android:id="@+id/edittext_p23" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:text="@string/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"/>
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
 </ScrollView>

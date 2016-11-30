@@ -3,11 +3,9 @@
     package="com.example.d.populationmonitor">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-
-    <user-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -24,21 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".questions1">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".questions2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".questions3"></activity>
+        <activity android:name=".questions1" />
+        <activity android:name=".questions2" />
+        <activity android:name=".questions3" />
+        <activity android:name=".activity_questions4" />
+        <activity android:name=".questions5" />
+        <activity android:name=".questions6"/>
     </application>
 
 </manifest>

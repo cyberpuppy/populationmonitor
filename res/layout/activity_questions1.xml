@@ -25,147 +25,19 @@
 
 
         <TextView
-            android:text="@string/province"
+            android:text="@string/County"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView5" />
 
-        <EditText
+        <AutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="12dp"
             android:ems="10"
-            android:id="@+id/editText" />
+            android:id="@+id/county" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
 
-        <TextView
-            android:text="@string/district"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView6" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText2" />
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
-
-        <TextView
-            android:text="@string/division"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView7" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText3" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
-
-        <TextView
-            android:text="@string/location"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView8" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText4" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
-
-        <TextView
-            android:text="@string/sub_location"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView9" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText5" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
-
-        <TextView
-            android:text="@string/e_a_number"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView10" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText6" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
-
-        <TextView
-            android:text="@string/e_a_type"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView11" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText7" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
-
-        <TextView
-            android:text="@string/e_a_status"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView12" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText8" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
 
         <TextView
             android:text="@string/household_no"
@@ -179,65 +51,22 @@
             android:ems="10"
             android:id="@+id/editText9" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
+        <!--<TextView-->
+            <!--android:text="@string/household_type"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/textView14" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="12dp"-->
+            <!--android:ems="10"-->
+            <!--android:id="@+id/editText10" />-->
+
 
         <TextView
-            android:text="@string/household_type"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView14" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText10" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
-
-        <TextView
-            android:text="@string/constituency"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView15" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText11" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
-
-        <TextView
-            android:text="@string/ward"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView16" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:ems="10"
-            android:id="@+id/editText12" />
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
-
-        <TextView
-            android:text="@string/males"
+            android:text="How many males are in this house"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView17" />
@@ -248,13 +77,9 @@
             android:textSize="12dp"
             android:ems="10"
             android:id="@+id/editText13" />
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
 
         <TextView
-            android:text="@string/females"
+            android:text="How many females are in this house"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView18" />
@@ -266,10 +91,6 @@
             android:ems="10"
             android:id="@+id/editText14" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#c0c0c0"/>
         <TextView
             android:text="@string/total_household_population"
             android:layout_width="match_parent"
@@ -294,8 +115,7 @@
                 android:text="@string/next"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="questions2"
-                android:id="@+id/button2"/>
+                android:id="@+id/button1"/>
         </LinearLayout>
 
     </LinearLayout>
