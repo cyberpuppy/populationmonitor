@@ -30,7 +30,7 @@ public class background extends AsyncTask<String,Void,String>
         @Override
         protected String doInBackground(String... params) {
             String type = params[0];
-            String login_url = "http://192.168.0.14/myfiles/connection2.1";
+            String login_url = "http://10.0.3.2//connection2.1.php";
             if(type.equals("login")) {
                 try {
                     String id = params[1];
